@@ -62,7 +62,7 @@ if(cmd === `${prefix}shout`){
      let announcement = args.join(" ");
      let embed = new Discord.RichEmbed()
      .setDescription(announcement)
-     .setTitle("|-| Announcement |-|")
+     .setTitle("AFPU: Announcement.")
      .setThumbnail("https://cdn.discordapp.com/attachments/491640462365556747/491643357341417482/3602266913a7a394fb5f4d1e3061bd03.png")
      .setColor("#2A363B")
       message.delete();
