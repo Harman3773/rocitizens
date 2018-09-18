@@ -6,7 +6,7 @@ const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 
 bot.on('ready',() => {
-bot.user.setActivity("CreamShake-V2")
+bot.user.setActivity("Area-57 {Authorized}")
 })
 
 //---------------------------------------------------------------\\//---------------------------------------------------------------\\
