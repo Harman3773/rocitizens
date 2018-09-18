@@ -162,7 +162,7 @@ if(cmd === `${prefix}shout`){
    .setTitle("AIRMAN rank job information.")
    .setDescription("Airman rank description.")
    .addField("AIRMAN job:", "Airman of the units/troops/soldiers of the base, they secure the GR, sweep the floors etcetera, and they secure.")
-   .setFooter("Airman  - Official property of the US airforce.")
+   .setFooter("Airman  - Official property of the AFPU..")
    .setThumbnail("https://cdn.discordapp.com/attachments/491640462365556747/491661424842637313/E3_USAF_AM1.png")
    .setColor("#2A363B")
    message.channel.send(embed)
@@ -183,7 +183,7 @@ if(cmd === `${prefix}shout`){
    .addField("Stargate special operations", "mahr10 or <@361496558354563072>")
    .addField("Combat Control Team", "redstonedesigner or <@355419089050796033>")
    .addField("Material Command.", "totoro987123 or <@280324474425835521>")
-   .setFooter("Official property of the US Airforce.")
+   .setFooter("Official property of the AFPU..")
    .setColor("#2A363B")
    message.channel.send(embed)
  }    
