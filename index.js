@@ -91,15 +91,18 @@ if(cmd === `${prefix}shout`){
       }  
    }      
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\ 
- if(cmd === `${prefix}cctinfo`){
+ 
+  if(cmd === `${prefix}cctinfo`){
    let embed = new Discord.RichEmbed()
    .setTitle("CCT rank job information")
    .setDescription("To join CCT apply when the apps are open.")
    .addField("CCT job:", "The CCT (Combat Control Team) man the control room,  there in control of the gate, They also control the iris,")
    .setFooter("CCT - Combat Control Team")
+   .setThumbnail("https://cdn.discordapp.com/attachments/491640462365556747/491660566469935104/300px-USAF_Combat_Control_insignia.png")
    .setColor("#2A363B")
    message.channel.send(embed)
  }    
+      
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\ 
    
  if(cmd === `${prefix}sgsocinfo`){
@@ -138,6 +141,38 @@ if(cmd === `${prefix}shout`){
    .setColor("#2A363B")
    message.channel.send(embed)
  }    
+      
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\ 
+     
+ if(cmd === `${prefix}matcominfo`){
+   let embed = new Discord.RichEmbed()
+   .setTitle("MATCOM rank job information")
+   .setDescription("To join MATCOM, apply when the apps are open.")
+   .addField("SGSOC job:", "The MATCOM (Material Command) The MATCOM are incharge of development.")
+   .setFooter("MATCOM  - Material command.")
+   .setThumbnail("https://cdn.discordapp.com/attachments/491640462365556747/491658524405792770/a21c8dc10b0cbf544f3f05df42d8c8a6.png")
+   .setColor("#2A363B")
+   message.channel.send(embed)
+ }    
+      
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\ 
+      
+ if(cmd === `${prefix}airmaninfo`){
+   let embed = new Discord.RichEmbed()
+   .setTitle("AIRMAN rank job information.")
+   .setDescription("Airman rank description.")
+   .addField("AIRMAN job:", "Airman of the units/troops/soldiers of the base, they seure the GR, sweep the floors etcetera, and they secure.")
+   .setFooter("Airman  - Official property of the US airforce.")
+   .setThumbnail("https://cdn.discordapp.com/attachments/491640462365556747/491661424842637313/E3_USAF_AM1.png")
+   .setColor("#2A363B")
+   message.channel.send(embed)
+ }    
+      
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\
+      
+      if(cmd === `${prefix}lander`){
+          message.reply("LANDER IS THE GOD DAMN BEST PERSON.")
+      }            
       
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\       
    
