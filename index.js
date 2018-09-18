@@ -161,7 +161,7 @@ if(cmd === `${prefix}shout`){
    let embed = new Discord.RichEmbed()
    .setTitle("AIRMAN rank job information.")
    .setDescription("Airman rank description.")
-   .addField("AIRMAN job:", "Airman of the units/troops/soldiers of the base, they seure the GR, sweep the floors etcetera, and they secure.")
+   .addField("AIRMAN job:", "Airman of the units/troops/soldiers of the base, they secure the GR, sweep the floors etcetera, and they secure.")
    .setFooter("Airman  - Official property of the US airforce.")
    .setThumbnail("https://cdn.discordapp.com/attachments/491640462365556747/491661424842637313/E3_USAF_AM1.png")
    .setColor("#2A363B")
@@ -174,7 +174,19 @@ if(cmd === `${prefix}shout`){
           message.reply("LANDER IS THE GOD DAMN BEST PERSON.")
       }            
       
- //---------------------------------------------------------------\\//---------------------------------------------------------------\\       
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\
+      
+ if(cmd === `${prefix}COs`){
+   let embed = new Discord.RichEmbed()
+   .setTitle("Commanding officer of each division.")
+   .addField("Security Forces", "TheRareLegend or <@&340904650905485322>")
+   .setFooter("Airman  - Official property of the US airforce.")
+   .setThumbnail("https://cdn.discordapp.com/attachments/491640462365556747/491661424842637313/E3_USAF_AM1.png")
+   .setColor("#2A363B")
+   message.channel.send(embed)
+ }    
+      
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\      
    
 if(cmd === `${prefix}dm`){
 
