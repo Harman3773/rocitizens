@@ -42,8 +42,23 @@ bot.on("message", async message => {
             
        if(message.mentions.users.first()) return message.mentions.users.first().send(warnembed);       
       }            
- //---------------------------------------------------------------\\//---------------------------------------------------------------\\            
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\
+  
+ if(cmd === `${prefix}status`){
 
+   let announcement = args.join(" ");
+ 
+  if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("Sorry you cant set status.");  
+  bot.user.setActivity(announcement)
+   
+  let aembed = new Discord.RichEmbed()
+  .setTitle("Bot Status")
+  .setDescription("The bot status has been changed, please dont abuse this feature.")
+  message.channel.send(aembed);
+}  
+
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
+  
 if(cmd === `${prefix}shout`){
     
    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.reply("Sorry you cannot shout things, its only people with manage messages perms. :)"); 
