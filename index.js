@@ -70,6 +70,15 @@ if(cmd === `${prefix}shout`){
 
 }   
 
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
+   if(cmd === `${prefix}gamma`){
+      let cctRole = message.guild.roles.find("name", "CCT")
+      if(message.member.roles.has(modrole.id)) {
+         message.author.send("Greetings to you, You have asked for the gate code to gamma so here it is, **1, 2, 3, 4, 5, 6**")
+      }    else {
+         message.reply("Nice try trying to gain the gate codes, dont do it again. :warning:")
+      }  
+   }      
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\     
    
 if(cmd === `${prefix}dm`){
