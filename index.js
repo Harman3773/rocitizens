@@ -71,13 +71,13 @@ if(cmd === `${prefix}shout`){
 }   
 
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
-   if(cmd === `${prefix}gamma`){
+   if(cmd === `${prefix}gatecodes`){
       let cctRole = message.guild.roles.find("name", "CCT")
       let embed = new Discord.RichEmbed()
       .setTitle("Gate Destinations")
       .setDescription("These gate keys are not to be leaked ANYWHERE, if we find out you have leaked them there will be serious consequences.")
-      .addField("Earth", "1, 2, 3, 4, 5, 6.")
-      .addField("CLASSIFIED", "##############")
+      .addField("Earth", "1 20 2 21 3 23")
+      .addField("Gamma", "1 2 3 4 5 6")
       .addField("CLASSIFIED", "##############")
       .addField("CLASSIFIED", "##############")
       .addField("CLASSIFIED", "##############")
