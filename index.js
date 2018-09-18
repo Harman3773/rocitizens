@@ -98,7 +98,7 @@ if(cmd === `${prefix}shout`){
    .addField("CCT job:", "The CCT (Combat Control Team) man the control room,  there in control of the gate, They also control the iris,")
    .setFooter("CCT - Combat Control Team")
    .setColor("#2A363B")
-   message.reply(embed)
+   message.channel.send(embed)
  }    
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\ 
    
@@ -110,7 +110,7 @@ if(cmd === `${prefix}shout`){
    .setFooter("SGSOC  - Stargate special operations command.")
    .setThumbnail("https://cdn.discordapp.com/icons/425827182305345536/38886026b784143da2fac30dd9e9087d.webp")
    .setColor("#2A363B")
-   message.reply(embed)
+   message.channel.send(embed)
  }    
       
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\ 
@@ -123,7 +123,7 @@ if(cmd === `${prefix}shout`){
    .setFooter("SF  - Security Forces")
    .setColor("#2A363B")
    .setThumbnail("https://cdn.discordapp.com/attachments/384133658270760962/491008004515299345/SF_logo.png")
-   message.reply(embed)
+   message.channel.send(embed)
  }    
       
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
@@ -136,7 +136,7 @@ if(cmd === `${prefix}shout`){
    .setFooter("MATCOM  - Material command.")
    .setThumbnail("https://cdn.discordapp.com/attachments/491640462365556747/491658524405792770/a21c8dc10b0cbf544f3f05df42d8c8a6.png")
    .setColor("#2A363B")
-   message.reply(embed)
+   message.channel.send(embed)
  }    
       
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\       
