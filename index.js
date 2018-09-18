@@ -5,6 +5,10 @@ const Discord = require("discord.js");
 
 const bot = new Discord.Client({disableEveryone: true});
 
+bot.on('ready',() => {
+bot.user.setActivity("Area 52 {Authorized}")
+}
+
 //---------------------------------------------------------------\\//---------------------------------------------------------------\\
 
 bot.on("message", async message => {
