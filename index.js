@@ -180,8 +180,10 @@ if(cmd === `${prefix}shout`){
    let embed = new Discord.RichEmbed()
    .setTitle("Commanding officer of each division.")
    .addField("Security Forces", "TheRareLegend or <@340904650905485322>")
-   .setFooter("Airman  - Official property of the US airforce.")
-   .setThumbnail("https://cdn.discordapp.com/attachments/491640462365556747/491661424842637313/E3_USAF_AM1.png")
+   .addField("Stargate special operations", "mahr10 or <@361496558354563072>")
+   .addField("Combat Control Team", "redstonedesigner or <@355419089050796033>")
+   .addField("Material Command.", "totoro987123 or <@280324474425835521>")
+   .setFooter("Official property of the US Airforce.")
    .setColor("#2A363B")
    message.channel.send(embed)
  }    
