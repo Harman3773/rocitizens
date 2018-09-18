@@ -98,7 +98,7 @@ if(cmd === `${prefix}shout`){
    let embed = new Discord.RichEmbed()
    .setTitle("CCT rank job information")
    .setDescription("To join CCT apply when the apps are open.")
-   .addField("CCT job:", "The CCT (Combat Control Team) man the control room, they have to know all the codes for the gate, and they dial it when ordered, They also control the iris, and manage gate room staff.")
+   .addField("CCT job:", "The CCT (Combat Control Team) man the control room,  there in control of the gate, They also control the iris, and manage gate room staff.")
    .setFooter("CCT - Combat Control Team")
    message.author.send(embed)
  }    
