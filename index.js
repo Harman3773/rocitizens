@@ -93,7 +93,26 @@ if(cmd === `${prefix}shout`){
          message.reply("Nice try trying to gain the gate codes, dont do it again. :warning:")
       }  
    }      
- //---------------------------------------------------------------\\//---------------------------------------------------------------\\     
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\ 
+ if(cmd === `${prefix}cctinfo`){
+   let embed = new Discord.RichEmbed()
+   .setTitle("CCT rank job information")
+   .setDescription("To join CCT apply when the apps are open.")
+   .addField("CCT job:", "The CCT (Combat Control Team) man the control room, they have to know all the codes for the gate, and they dial it when ordered, They also control the iris, and manage gate room staff.")
+   .setFooter("CCT - Combat Control Team")
+   message.author.send(embed)
+ }    
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\ 
+   
+ if(cmd === `${prefix}sgsocinfo`){
+   let embed = new Discord.RichEmbed()
+   .setTitle("SGSOC rank job information")
+   .setDescription("To join SGSOC, tryout when the apps are open.")
+   .addField("SGSOC job:", "The SGSOC (Stargate Special Operations Command) The SGSOC are incharge of entering the stargate, and fighting the aliens, and hostiles.")
+   .setFooter("SGSOC  - Stargate special operations command.")
+   message.author.send(embed)
+ }    
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\   
    
 if(cmd === `${prefix}dm`){
 
