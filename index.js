@@ -122,10 +122,24 @@ if(cmd === `${prefix}shout`){
    .addField("SGSOC job:", "The SF (Security Forces) The SF are incharge of maintaining staff, escourting hostiles, and guarding.")
    .setFooter("SF  - Security Forces")
    .setColor("#2A363B")
+   .setThumbnail("https://cdn.discordapp.com/attachments/384133658270760962/491008004515299345/SF_logo.png")
    message.reply(embed)
  }    
       
- //---------------------------------------------------------------\\//---------------------------------------------------------------\\      
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\
+      
+ if(cmd === `${prefix}matcominfo`){
+   let embed = new Discord.RichEmbed()
+   .setTitle("MATCOM rank job information")
+   .setDescription("To join MATCOM, apply when the apps are open.")
+   .addField("SGSOC job:", "The MATCOM (Material Command) The MATCOM are incharge of development.")
+   .setFooter("MATCOM  - Material command.")
+   .setThumbnail("https://cdn.discordapp.com/attachments/491640462365556747/491658524405792770/a21c8dc10b0cbf544f3f05df42d8c8a6.png")
+   .setColor("#2A363B")
+   message.reply(embed)
+ }    
+      
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\       
    
 if(cmd === `${prefix}dm`){
 
