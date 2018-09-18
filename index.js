@@ -73,8 +73,22 @@ if(cmd === `${prefix}shout`){
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
    if(cmd === `${prefix}gamma`){
       let cctRole = message.guild.roles.find("name", "CCT")
+      let embed = new Discord.RichEmbed()
+      .setTitle("Gate Destinations")
+      .setDescription("These gate keys are not to be leaked ANYWHERE, if we find out you have leaked them there will be serious consequences.")
+      .addField("Earth", "1, 2, 3, 4, 5, 6.")
+      .addField("CLASSIFIED", "##############")
+      .addField("CLASSIFIED", "##############")
+      .addField("CLASSIFIED", "##############")
+      .addField("CLASSIFIED", "##############")
+      .addField("CLASSIFIED", "##############")
+      .addField("CLASSIFIED", "##############")
+      .addField("CLASSIFIED", "##############")
+      .addField("CLASSIFIED", "##############")
+      .addField("CLASSIFIED", "##############")
+      .setColor("#2A363B")
       if(message.member.roles.has(cctRole.id)) {
-         message.author.send("Greetings to you, You have asked for the gate code to gamma so here it is, **1, 2, 3, 4, 5, 6**")
+         message.author.send(embed)
       }    else {
          message.reply("Nice try trying to gain the gate codes, dont do it again. :warning:")
       }  
