@@ -179,7 +179,7 @@ if(cmd === `${prefix}shout`){
  if(cmd === `${prefix}COs`){
    let embed = new Discord.RichEmbed()
    .setTitle("Commanding officer of each division.")
-   .addField("Security Forces", "TheRareLegend or <@&340904650905485322>")
+   .addField("Security Forces", "TheRareLegend or <@340904650905485322>")
    .setFooter("Airman  - Official property of the US airforce.")
    .setThumbnail("https://cdn.discordapp.com/attachments/491640462365556747/491661424842637313/E3_USAF_AM1.png")
    .setColor("#2A363B")
