@@ -5,9 +5,6 @@ const Discord = require("discord.js");
 
 const bot = new Discord.Client({disableEveryone: true});
 
-bot.on("guildMemberAdd", function(member){
-   member.guild.channels.find("name", "welcome").sendMessage(member.toString() + "Welcome to ***|-| SCPF |-| Secure Contain Protect*** I am the SCPF bot, I know everything about SCP, but bear in mind not to mess up or abuse in this server! Thanks alot. - |-| SCP |-| Bot.");
-});
 //---------------------------------------------------------------\\//---------------------------------------------------------------\\
 
 bot.on('ready',() => {
@@ -100,7 +97,8 @@ if(cmd === `${prefix}shout`){
    .setDescription("To join CCT apply when the apps are open.")
    .addField("CCT job:", "The CCT (Combat Control Team) man the control room,  there in control of the gate, They also control the iris, and manage gate room staff.")
    .setFooter("CCT - Combat Control Team")
-   message.author.send(embed)
+   .setColor("#2A363B")
+   message.reply(embed)
  }    
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\ 
    
@@ -110,7 +108,8 @@ if(cmd === `${prefix}shout`){
    .setDescription("To join SGSOC, tryout when the apps are open.")
    .addField("SGSOC job:", "The SGSOC (Stargate Special Operations Command) The SGSOC are incharge of entering the stargate, and fighting the aliens, and hostiles.")
    .setFooter("SGSOC  - Stargate special operations command.")
-   message.author.send(embed)
+   .setColor("#2A363B")
+   message.reply(embed)
  }    
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\   
    
