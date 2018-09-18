@@ -95,7 +95,7 @@ if(cmd === `${prefix}shout`){
    let embed = new Discord.RichEmbed()
    .setTitle("CCT rank job information")
    .setDescription("To join CCT apply when the apps are open.")
-   .addField("CCT job:", "The CCT (Combat Control Team) man the control room,  there in control of the gate, They also control the iris, and manage gate room staff.")
+   .addField("CCT job:", "The CCT (Combat Control Team) man the control room,  there in control of the gate, They also control the iris,")
    .setFooter("CCT - Combat Control Team")
    .setColor("#2A363B")
    message.reply(embed)
@@ -105,13 +105,27 @@ if(cmd === `${prefix}shout`){
  if(cmd === `${prefix}sgsocinfo`){
    let embed = new Discord.RichEmbed()
    .setTitle("SGSOC rank job information")
-   .setDescription("To join SGSOC, tryout when the apps are open.")
+   .setDescription("To join SGSOC, tryout when the tryouts are open.")
    .addField("SGSOC job:", "The SGSOC (Stargate Special Operations Command) The SGSOC are incharge of entering the stargate, and fighting the aliens, and hostiles.")
    .setFooter("SGSOC  - Stargate special operations command.")
+   .setThumbnail("https://cdn.discordapp.com/icons/425827182305345536/38886026b784143da2fac30dd9e9087d.webp")
    .setColor("#2A363B")
    message.reply(embed)
  }    
- //---------------------------------------------------------------\\//---------------------------------------------------------------\\   
+      
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\ 
+      
+ if(cmd === `${prefix}sfinfo`){
+   let embed = new Discord.RichEmbed()
+   .setTitle("SF rank job information")
+   .setDescription("To join SF, apply when the apps are open.")
+   .addField("SGSOC job:", "The SF (Security Forces) The SF are incharge of maintaining staff, escourting hostiles, and guarding.")
+   .setFooter("SF  - Security Forces")
+   .setColor("#2A363B")
+   message.reply(embed)
+ }    
+      
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\      
    
 if(cmd === `${prefix}dm`){
 
