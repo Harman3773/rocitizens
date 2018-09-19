@@ -199,7 +199,20 @@ if(cmd === `${prefix}shout`){
    message.channel.send(embed)
  }    
       
- //---------------------------------------------------------------\\//---------------------------------------------------------------\\      
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\
+  
+ if(cmd === `${prefix}scominfo`){
+   let embed = new Discord.RichEmbed()
+   .setTitle("SCOM rank job information.")
+   .setDescription("SCOM rank description.")
+   .addField("SCOM job:", "SCOM are in charge of flying the planes, and there main position is in the base or in the beta site, with the planes.")
+   .setFooter("SCOM  - Space Command")
+   .setThumbnail("https://cdn.discordapp.com/attachments/488312295605403659/491963841282834462/Space_Command.png")
+   .setColor("#2A363B")
+   message.channel.send(embed)
+ }    
+      
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
    
 if(cmd === `${prefix}dm`){
 
