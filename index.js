@@ -48,7 +48,7 @@ bot.on("message", async message => {
       }            
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
  if(cmd == `{prefix}print`){
-     if(!message.member.hasPermission("MANAGE_MESSAGES")) or (!message.member.username = "Dr.REDACTED") return message.channel.send("This is a developer command only.");
+     if(!message.member.hasPermission("MANAGE_MESSAGES") or message.author.id = 481171799204429834) return message.channel.send("This is a developer command only.");
    message.channel.send("Debugging..")
  }   
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
