@@ -48,16 +48,16 @@ bot.on("message", async message => {
       }            
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
  if(cmd == `${prefix}botclient`){
-   let cctRole = message.guild.roles.find("name", "Bot Mainframe Developer")
+   let botdev = message.guild.roles.find("name", "Bot Mainframe Developer")
    
-   if(message.member.roles.has(cctRole.id)) {
-         if bot.ready then
+   if(message.member.roles.has(botdev.id)) {
          message.channel.send("The bot is ready and running.")
       }    
    
    else {
          message.reply("This command is restricted to the bot developer. <@481171799204429834>")
       }  
+    }
  }   
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
   
