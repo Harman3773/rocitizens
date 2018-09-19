@@ -133,7 +133,7 @@ if(cmd === `${prefix}shout`){
    let embed = new Discord.RichEmbed()
    .setTitle("SF rank job information")
    .setDescription("To join SF, apply when the apps are open.")
-   .addField("SGSOC job:", "The SF (Security Forces) The SF are incharge of maintaining staff, escourting hostiles, and guarding.")
+   .addField("SF job:", "The SF (Security Forces) The SF are incharge of maintaining staff, escourting hostiles, and guarding.")
    .setFooter("SF  - Security Forces")
    .setColor("#2A363B")
    .setThumbnail("https://cdn.discordapp.com/attachments/384133658270760962/491008004515299345/SF_logo.png")
