@@ -47,9 +47,17 @@ bot.on("message", async message => {
        if(message.mentions.users.first()) return message.mentions.users.first().send(warnembed);       
       }            
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
- if(cmd == `${prefix}print`){
-     if message.author.id = 481171799204429834 return message.channel.send("This is a developer command only.");
-   message.channel.send("Debugging..")
+ if(cmd == `${prefix}botclient`){
+   let cctRole = message.guild.roles.find("name", "Bot Mainframe Developer")
+   
+   if(message.member.roles.has(cctRole.id)) {
+         if bot.ready then
+         message.channel.send("The bot is ready and running.")
+      }    
+   
+   else {
+         message.reply("This command is restricted to the bot developer. <@481171799204429834>")
+      }  
  }   
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
   
