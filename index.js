@@ -49,9 +49,12 @@ bot.on("message", async message => {
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
   
 if(cmd == `${prefix}clientlog`){
-  if (message.author.id == 481171799204429834) {
- return message.channel.send("This is a developer command only."); 
-  }
+      let cctRole = message.guild.roles.find("name", "Bot Mainframe Developer")
+       if(message.member.roles.has(cctRole.id)) {
+         message.author.send("Test")
+      }    else {
+         message.reply("Dont attempt to gain access to bot fraimwork without confirmation from the bot dev.")
+      }
 }
   
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
