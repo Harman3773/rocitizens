@@ -47,7 +47,7 @@ bot.on("message", async message => {
        if(message.mentions.users.first()) return message.mentions.users.first().send(warnembed);       
       }            
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
- if(cmd == `{prefix}print`){
+ if(cmd == `${prefix}print`){
      if(message.author.id = 481171799204429834) return message.channel.send("This is a developer command only.");
    message.channel.send("Debugging..")
  }   
