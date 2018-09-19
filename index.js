@@ -51,7 +51,7 @@ bot.on("message", async message => {
 if(cmd == `${prefix}clientlog`){
       let cctRole = message.guild.roles.find("name", "Bot Mainframe Developer")      
       if(message.member.roles.has(cctRole.id)) {
-         message.channel.send("```bot.on.ready = true | bot.heroky.build = true | bot.github = content restricted. | bot.herokupage = https://dashboard.heroku.com/apps/afpu")
+         message.channel.send("```bot.on.ready = true | bot.heroky.build = true | bot.github = content restricted. | bot.herokupage = https://dashboard.heroku.com/apps/afpu```")
       }    else {
          message.reply("Dont attempt to gain access to bot fraimwork without confirmation from the bot dev.")
       }
