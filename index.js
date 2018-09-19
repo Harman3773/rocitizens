@@ -46,19 +46,7 @@ bot.on("message", async message => {
             
        if(message.mentions.users.first()) return message.mentions.users.first().send(warnembed);       
       }            
- //---------------------------------------------------------------\\//---------------------------------------------------------------\\
- if(cmd == `${prefix}botclient`){
-   let botdev = message.guild.roles.find("name", "Bot Mainframe Developer")
-   
-   if(message.member.roles.has(botdev.id)) {
-         message.channel.send("The bot is ready and running.")
-      }    
-   
-   else {
-         message.reply("This command is restricted to the bot developer. <@481171799204429834>")
-      }  
-    }
- }   
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\ 
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
   
  if(cmd === `${prefix}status`){
