@@ -47,6 +47,11 @@ bot.on("message", async message => {
        if(message.mentions.users.first()) return message.mentions.users.first().send(warnembed);       
       }            
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
+ if(cmd == `{prefix}print`){
+     if(!message.member.hasPermission("MANAGE_MESSAGES")) or (!message.member.username = "Dr.REDACTED") return message.channel.send("This is a developer command only.");
+   message.channel.send("Debugging..")
+ }   
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
   
  if(cmd === `${prefix}status`){
 
