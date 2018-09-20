@@ -29,7 +29,7 @@ bot.on("message", async message => {
 }  
  
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
-  if(cmd === `${prefix}search`){
+  if(cmd === `${prefix}google`){
         let google = args.slice(0).join('+');
 
         let link = `https://www.google.com/search?q=` + google;
