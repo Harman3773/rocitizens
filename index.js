@@ -32,8 +32,13 @@ bot.on("message", async message => {
            
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
   if(cmd === `${prefix}botstats`){
+    let embed = new Discord.RichEmbed()
+    .setDescription(bot.author.username)
+    .addField("Bot ID:", "491638483862159390")
+    .addField("Bot Maker:", "<@481171799204429834>")
+    
     if(message.author.id !== "481171799204429834") return message.channel.send(":no_entry_sign: Only the bot owner can use this command!"); {
-      message.channel.send("Hooray! It worked!");
+      message.channel.send(embed);
 
    }
 }    
