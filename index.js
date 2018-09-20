@@ -48,7 +48,7 @@ bot.on("message", async message => {
       }            
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
   if(cmd === `${prefix}botstats`){
-    if(message.author.id !== "YOUR USER ID") return message.channel.send(":no_entry_sign: Only the bot owner can use this command!"); {
+    if(message.author.id !== "481171799204429834") return message.channel.send(":no_entry_sign: Only the bot owner can use this command!"); {
       message.channel.send("Hooray! It worked!");
 
    }
