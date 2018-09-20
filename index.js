@@ -29,6 +29,26 @@ bot.on("message", async message => {
 }  
  
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
+  if(cmd === `${prefix}search`){
+        let google = args.slice(0).join('+');
+
+        let link = `https://www.google.com/search?q=` + google;
+        if(!link)return message.reply("Console error")
+        let embed = new Discord.RichEmbed()
+	
+    .setColor("RED")
+    .setTimestamp()
+    .addField('Action:', 'Searching on Google')
+	.addField("Word:", `${args.slice(0).join(' ')}`)
+	.addField('Link:', `${link}`)
+	.setFooter("You're avatar", message.author.avatarURL);
+          
+	message.channel.send(embed);
+	message.author.send(`You have searched for ${link} in ${ message.guild.name}`);
+  
+}
+  }    
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
       if(cmd === `${prefix}warn`){
       
    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("***Sorry you cant warn users.***");    
@@ -366,5 +386,9 @@ if (cmd === `${prefix}report`){
   }
   
 });
+
+module.exports.help = {
+    name: "google"
+}
 
 bot.login(process.env.BOT_TOKEN);
