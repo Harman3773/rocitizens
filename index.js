@@ -2,7 +2,7 @@
 
 const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
-const ms = require('ms');
+
 
 
 const bot = new Discord.Client({disableEveryone: true});
@@ -29,26 +29,7 @@ bot.on("message", async message => {
   message.channel.bulkDelete(args[0]);
  return;
 }  
- 
- //---------------------------------------------------------------\\//---------------------------------------------------------------\\
-    
-      if(cmd === `${prefix}warn`){
-      
-   if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("***Sorry you cant warn users.***");    
-     let wUser = message.guild.member(message.mentions.users.first() || message.guilds.members.get(args[0]));
-       if(!wUser) return message.channel.send("Sorry couldnt find user :unamused:");
-       let warnreason = args.join(" ").slice(22);
-        
-        let warnembed = new Discord.RichEmbed()
-        .setThumbnail("https://cdn.discordapp.com/attachments/426090985475538954/491717416355889172/Possible_AFPU.png")
-        .setColor("#2A363B")
-        .addField("Warn Reason:", warnreason)
-        .setDescription("You have been warned in ***AFPU: Communications.***")
-            
-       message.reply("***User has been warned.***");   
-            
-       if(message.mentions.users.first()) return message.mentions.users.first().send(warnembed);       
-      }            
+           
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
   if(cmd === `${prefix}botstats`){
     if(message.author.id !== "481171799204429834") return message.channel.send(":no_entry_sign: Only the bot owner can use this command!"); {
