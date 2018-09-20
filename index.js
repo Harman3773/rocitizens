@@ -47,6 +47,13 @@ bot.on("message", async message => {
        if(message.mentions.users.first()) return message.mentions.users.first().send(warnembed);       
       }            
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
+  if(cmd === `${prefix}botstats`){
+    if(message.author.id !== "YOUR USER ID") return message.channel.send(":no_entry_sign: Only the bot owner can use this command!"); {
+      message.channel.send("Hooray! It worked!");
+
+   }
+}    
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
   
 if(cmd == `${prefix}clientlog`){
       let cctRole = message.guild.roles.find("name", "Bot Mainframe Developer")      
