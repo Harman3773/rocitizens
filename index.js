@@ -31,6 +31,18 @@ bot.on("message", async message => {
 }  
            
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
+  
+  if(cmd === `${prefix}slap`){
+    let slap = args.join(" ");
+    let slape =  new Discord.RichEmbed()
+    .setDescription("YOU HAVE SLAPPED SOMEONE.")
+    .addField("Slapped person:", slap)
+    .setTitle("slap")
+    
+    message.channel.send(slape)
+  }    
+  
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
   if(cmd === `${prefix}botstats`){
     let embed = new Discord.RichEmbed()
     .setDescription("***AFPU Official Bot®***")
