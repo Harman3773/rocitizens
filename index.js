@@ -33,7 +33,7 @@ bot.on("message", async message => {
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
   if(cmd === `${prefix}botstats`){
     let embed = new Discord.RichEmbed()
-    .setDescription("***AFPU Official Bot®***)
+    .setDescription("***AFPU Official Bot®***")
     .addField("Bot ID:", "491638483862159390")
     .addField("Bot Maker:", "<@481171799204429834>")
     
