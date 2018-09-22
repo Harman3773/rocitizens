@@ -75,10 +75,7 @@ bot.on("message", async message => {
     } else {
       message.reply("You cant make patrols, sorry.")
     }
-    
-    if(message.author.id !== "481171799204429834"){
-      message.channel.send(embed)
-    }
+ 
   }    
   
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
