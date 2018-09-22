@@ -48,8 +48,8 @@ bot.on("message", async message => {
     let slap = args.join(" ");
     let slape =  new Discord.RichEmbed()
     .setDescription("YOU HAVE PUNCHED SOMEONE.")
-    .addField("Slapped person:", slap)
-    .setTitle("slap")
+    .addField("Punched person:", slap)
+    .setTitle("Punch log:")
     
     message.channel.send(slape)
   }    
