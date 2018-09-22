@@ -83,6 +83,26 @@ if(cmd == `${prefix}clientlog`){
     message.channel.send(embed)
   }    
   
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\
+  
+  if(cmd === `${prefix}cmds`){
+    let embed = new Discord.RichEmbed()
+    .setTitle("Commands.")
+    .setFooter("Official property of AFPU: Command.")
+    .setDescription("This is a commands page, go down for all commands.")
+    .addField("More Options:", "Dm a Officer+")
+    .addField("More Help Commands:", "-help")
+    .addField("Moderation commands:", "-Kick, -Ban, -Report, -Warn.")
+    .addField("Fun Commands:", "-Slap, -Punch, -DM, -Say")
+    .addField("Bot Utility commands:", "help, status, shout.")
+    .addField("AFPU Commands:", "-shout, -areapatrol, -gatecodes, -cctinfo, -sgsocinfo, -sfinfo, -scominfo, -matcominfo, -airmaninfo, -COs")
+    .addField("Developer authorization commands:", "-clientlog, -botstats.")
+    .setThumbnail("https://cdn.discordapp.com/attachments/384133046368206848/493096425484451890/3602266913a7a394fb5f4d1e3061bd03.png")
+    .setColor("#2A363B")
+    
+    message.channel.send(embed)
+  }    
+  
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
   
  if(cmd === `${prefix}status`){
