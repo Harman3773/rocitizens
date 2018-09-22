@@ -60,7 +60,6 @@ bot.on("message", async message => {
   if(cmd === `${prefix}patrol`){
     let host = args.join(" ");
     let embed = new Discord.RichEmbed()
-    
     .setThumbanial("https://cdn.discordapp.com/attachments/426090985475538954/491717416355889172/Possible_AFPU.png")
     .setTitle("Patrol at Area 52.")
     .addField("Hosted by:", host)
