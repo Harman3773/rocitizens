@@ -106,9 +106,13 @@ if(cmd === `${prefix}shout`){
     .setThumbnail("https://cdn.discordapp.com/attachments/490888085052063745/493089823285051423/baaa25b015bd347a057c42c2956bdda6.png")
     .setTitle("Area Patrol (Startup).")
     .addField("Message:", announcement) 
+    .setDescription("https://www.roblox.com/games/1185704750/Area-52")
       let officer = message.guild.roles.find("name", "Officer")      
       if(message.member.roles.has(officer.id)) {
          message.channel.send(embed)
+        message.channel.send("<@&493091412481671169>")
+        message.channel.send("<@&493091586624847892>")
+        message.channel.send("<@&493091739222147092>")
       }    else {
          message.reply("Your not an officer.")
       }
