@@ -59,6 +59,7 @@ bot.on("message", async message => {
   
   if(cmd === `${prefix}patrol`){
     let host = args.join(" ");
+    let cctRole = message.guild.roles.find("name", "@Non-Commissioned Officer")
     let embed = new Discord.RichEmbed()
     .setThumbanial("https://cdn.discordapp.com/attachments/426090985475538954/491717416355889172/Possible_AFPU.png")
     .setTitle("Patrol at Area 52.")
@@ -66,17 +67,15 @@ bot.on("message", async message => {
     .setDescription("https://www.roblox.com/games/1185704750/Area-52 Come to base for a awsome patrol, points will be awarded.")
     .setColor("#2A363B")
     .setFooter("Owned by AFPU: <@280324474425835521>")
-    
-    let cctRole = message.guild.roles.find("name", "Non-Commissioned Officer") 
-    if(message.member.roles.has(cctRole.id)) {
-      message.channel.send("<@&493014783407292420> <@&493015507532906496> <@&493015636717600778>")
-      message.channel.send(embed)
-    } else {
-      message.reply("You cant make patrols, sorry.")
-    }
-  }
-  }    
-  
+          
+      if(message.member.roles.has(cctRole.id)) {
+         message.channel.send("```bot.on.ready = true | bot.heroky.build = true | bot.github = content restricted. | bot.herokupage = https://dashboard.heroku.com/apps/afpu```")
+      }    else {
+         message.reply("You cant host patrols. :warning:")
+      }
+}
+
+  }  
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
   
   
