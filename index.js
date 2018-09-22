@@ -105,7 +105,7 @@ if(cmd === `${prefix}shout`){
     let embed = new Discord.RichEmbed()
     .setThumbnail("https://cdn.discordapp.com/attachments/490888085052063745/493089823285051423/baaa25b015bd347a057c42c2956bdda6.png")
     .setTitle("Area Patrol (Startup).")
-    .addField("Message:", announcement") 
+    .addField("Message:", announcement) 
       let officer = message.guild.roles.find("name", "Officer")      
       if(message.member.roles.has(officer.id)) {
          message.channel.send(embed)
