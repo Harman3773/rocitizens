@@ -68,6 +68,21 @@ if(cmd == `${prefix}clientlog`){
       }
 }
   
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\ 
+  
+  if(cmd === `${prefix}help`){
+    let embed = new Discord.RichEmbed()
+    .setTitle("Help.")
+    .setFooter("Official property of AFPU: Command.")
+    .setDescription("This is a information page, for more info go down.")
+    .addField("More Options:", "Dm a Officer+")
+    .addField("More Help Commands:", "-cmds")
+    .setThumbnail("https://cdn.discordapp.com/attachments/384133046368206848/493096425484451890/3602266913a7a394fb5f4d1e3061bd03.png")
+    .setColor("#2A363B")
+    
+    message.channel.send(embed)
+  }    
+  
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
   
  if(cmd === `${prefix}status`){
