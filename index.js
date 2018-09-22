@@ -57,6 +57,24 @@ bot.on("message", async message => {
 }    
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
 
+  if(cmd === `{prefix}patrol`){
+    let announcement = args.join(" ");
+    let embed = new Discord.RichEmbed()
+    let cctRole = message.guild.roles.find("name", "Officer")    
+    .setTitle("Area Startup (patrol)")
+    .setDescription("https://www.roblox.com/games/1185704750/Area-52")
+    .addField("Hosted by:" announcement)
+    .setColor("#2A363B")
+    .setThumbnail("https://cdn.discordapp.com/attachments/492709725801021450/493085801953886208/baaa25b015bd347a057c42c2956bdda6.png")
+    
+    if(message.member.roles.has(cctRole.id)) {
+    message.channel.send("<@&493085936792371231> | <@&493085949895376897> | <@&493086123288035329>")
+        message.channel.send(embed)
+    } else {
+      message.reply("Your not an officer.")
+    }
+  }    
+  
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
   
   
