@@ -69,7 +69,7 @@ bot.on("message", async message => {
     .setFooter("Owned by AFPU: <@280324474425835521>")
           
       if(message.member.roles.has(cctRole.id)) {
-         message.channel.send("```bot.on.ready = true | bot.heroky.build = true | bot.github = content restricted. | bot.herokupage = https://dashboard.heroku.com/apps/afpu```")
+         message.channel.send(embed)
       }    else {
          message.reply("You cant host patrols. :warning:")
       }
