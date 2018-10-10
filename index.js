@@ -72,12 +72,8 @@ bot.on("message", async message => {
   
   
 if(cmd == `${prefix}clientlog`){
-      let cctRole = message.guild.roles.find("name", "Bot Mainframe Developer")      
-      if(message.member.roles.has(cctRole.id)) {
-         message.channel.send("```bot.on.ready = true | bot.heroky.build = true | bot.github = content restricted. | bot.herokupage = https://dashboard.heroku.com/apps/afpu```")
-      }    else {
-         message.reply("Dont attempt to gain access to bot fraimwork without confirmation from the bot dev.")
-      }
+    if(message.author.id !== "481171799204429834") return message.channel.send(":no_entry_sign: Only the bot owner can use this command!"); {
+      message.channel.send("```lua bot.on.ready = true | bot.heroku.build = true | bot.github = content restricted. | bot.herokupage = https://dashboard.heroku.com/apps/afpu```")
 }
   
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
