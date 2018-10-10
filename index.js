@@ -392,45 +392,6 @@ if (cmd === `${prefix}report`){
 
 
 
- //---------------------------------------------------------------\\//---------------------------------------------------------------\\
-  
-  if(cmd === `${prefix}devkick`){
-
-  let kUser = message.guild.member(message.mentions.users.first() || message.guilds.members.get(args[0]));
-  if(!kUser) return message.channel.send("User not found. :unamused:");
-  let kReason = args.join(" ").slice(22);
-
-   let kicksend = new Discord.RichEmbed()
-   .setTitle("Kicked from ***AFPU: Communications.***")
-   .setDescription("You have been kicked, please bear in mind the administrators now have this kick file Thanks.")
-   .addField("Kick reason:", kReason)
-   .setColor("#2A363B")
-   .setThumbnail("https://cdn.discordapp.com/attachments/426090985475538954/491717416355889172/Possible_AFPU.png")      
-        
-        
-  let kEmbed = new Discord.RichEmbed()
-   .setThumbnail("https://cdn.discordapp.com/attachments/426090985475538954/491717416355889172/Possible_AFPU.png") 
-   .setTitle("Moderation Kick")
-  .setColor("#2A363B")
-  .addField("Kicked User.", `${kUser} with the ID: ${kUser.id}`)
-  .addField("Kicked by:", `<@${message.author.username}> with the ID: ${message.author.id}`)
-  .addField("Channel", message.channel)
-  .addField("Time", message.createdAt)
-  .addField("Kick Reason", kReason);
-
-   let kchannel = message.guild.channels.find(`name`, "modlogs");
-   if(!kchannel) return message.channel.send("Channnel path not found. :smile:")
-
-  message.guild.member(kUser).kick(kReason);
-  kchannel.send(kEmbed);    
-  message.reply("***User had been Kicked.***"); 
-      if(message.mentions.users.first()) return message.mentions.users.first().send(kicksend);  
-
-  return;
-}
-
-
-
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\   
   
    if(cmd === `${prefix}ban`){
