@@ -74,6 +74,7 @@ bot.on("message", async message => {
 if(cmd == `${prefix}clientlog`){
     if(message.author.id !== "481171799204429834") return message.channel.send(":no_entry_sign: Only the bot owner can use this command!"); {
       message.channel.send("```lua bot.on.ready = true | bot.heroku.build = true | bot.github = content restricted. | bot.herokupage = https://dashboard.heroku.com/apps/afpu```")
+    }
 }
   
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
