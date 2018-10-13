@@ -278,10 +278,10 @@ if(cmd === `${prefix}shout`){
  if(cmd === `${prefix}COs`){
    let embed = new Discord.RichEmbed()
    .setTitle("Commanding officer of each division.")
-   .addField("Security Forces", "TheRareLegend or <@340904650905485322>")
+   .addField("Security Forces", "TheRareLegend or <@480537647060877323>")
    .addField("Stargate special operations", "mahr10 or <@361496558354563072>")
    .addField("Combat Control Team", "iiiDudz or <@365931656881766431>")
-   .addField("Material Command.", "totoro987123 or <@280324474425835521>")
+   .addField("Material Command.", "totoro987123 or <@130103736881119233>")
    .setFooter("Official property of the AFPU..")
    .setColor("#2A363B")
    message.channel.send(embed)
