@@ -117,7 +117,7 @@ if(cmd == `${prefix}clientlog`){
     .addField("More Options:", "Dm a Officer+")
     .addField("More Help Commands:", "-help")
     .addField("Moderation commands:", "-Kick, -Ban, -Report, -Warn.")
-    .addField("Fun Commands:", "-Slap, -Punch, -DM, -Say")
+    .addField("Fun Commands:", "-Slap, -Punch, -DM, -Say, -totsbday")
     .addField("Bot Utility commands:", "help, status, shout.")
     .addField("AFPU Commands:", "-shout, -areapatrol, -gatecodes, -cctinfo, -sgsocinfo, -sfinfo, -scominfo, -matcominfo, -airmaninfo, -COs")
     .addField("Developer authorization commands:", "-clientlog, -botstats.")
