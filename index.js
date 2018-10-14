@@ -79,7 +79,7 @@ if(cmd == `${prefix}clientlog`){
   
  if(cmd == `${prefix}networkhost`){
     if(message.author.id !== "481171799204429834") return message.channel.send(":no_entry_sign: Only the bot owner can use this command!"); {
-      message.channel.reply("This bots mainframe is hosted on Heroku, this dashboard should not be leaked to anyone except the bot maker; ScriptedBuilderz.")
+      message.reply("This bots mainframe is hosted on Heroku, this dashboard should not be leaked to anyone except the bot maker; ScriptedBuilderz.")
     }
 } 
   
@@ -87,7 +87,7 @@ if(cmd == `${prefix}clientlog`){
   
  if(cmd == `${prefix}devlanguage`){
     if(message.author.id !== "481171799204429834") return message.channel.send(":no_entry_sign: Only the bot owner can use this command!"); {
-      message.channel.reply("Java, Node.js, HTTPL.")
+      message.reply("Java, Node.js, HTTPL.")
     }
 } 
   
@@ -95,7 +95,7 @@ if(cmd == `${prefix}clientlog`){
   
  if(cmd == `${prefix}scriptplatform`){
     if(message.author.id !== "481171799204429834") return message.channel.send(":no_entry_sign: Only the bot owner can use this command!"); {
-      message.channel.reply("Github & Atom.")
+      message.reply("Github & Atom.")
     }
 } 
   
