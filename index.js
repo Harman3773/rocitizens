@@ -69,8 +69,6 @@ bot.on("message", async message => {
 }    
  //---------------------------------------------------------------\\//--------------------------------------------------------------- 
   
-  
-  
 if(cmd == `${prefix}clientlog`){
     if(message.author.id !== "481171799204429834") return message.channel.send(":no_entry_sign: Only the bot owner can use this command!"); {
       message.channel.send("```lua bot.on.ready = true | bot.heroku.build = true | bot.github = content restricted. | bot.herokupage = https://dashboard.heroku.com/apps/afpu```")
@@ -79,7 +77,29 @@ if(cmd == `${prefix}clientlog`){
   
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
   
- //---------------------------------------------------------------\\//---------------------------------------------------------------\\   
+ if(cmd == `${prefix}networkhost`){
+    if(message.author.id !== "481171799204429834") return message.channel.send(":no_entry_sign: Only the bot owner can use this command!"); {
+      message.channel.reply("This bots mainframe is hosted on Heroku, this dashboard should not be leaked to anyone except the bot maker; ScriptedBuilderz.")
+    }
+} 
+  
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\
+  
+ if(cmd == `${prefix}devlanguage`){
+    if(message.author.id !== "481171799204429834") return message.channel.send(":no_entry_sign: Only the bot owner can use this command!"); {
+      message.channel.reply("Java, Node.js, HTTPL.")
+    }
+} 
+  
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\ 
+  
+ if(cmd == `${prefix}scriptplatform`){
+    if(message.author.id !== "481171799204429834") return message.channel.send(":no_entry_sign: Only the bot owner can use this command!"); {
+      message.channel.reply("Github & Atom.")
+    }
+} 
+  
+ //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
   
   if(cmd === `${prefix}help`){
     let embed = new Discord.RichEmbed()
@@ -119,8 +139,8 @@ if(cmd == `${prefix}clientlog`){
     .addField("Moderation commands:", "-Kick, -Ban, -Report, -Warn.")
     .addField("Fun Commands:", "-Slap, -Punch, -DM, -Say, -totsbday")
     .addField("Bot Utility commands:", "help, status, shout.")
-    .addField("AFPU Commands:", "-shout, -areapatrol, -gatecodes, -cctinfo, -sgsocinfo, -sfinfo, -scominfo, -matcominfo, -airmaninfo, -COs")
-    .addField("Developer authorization commands:", "-clientlog, -botstats.")
+    .addField("AFPU Commands:", "-shout, -event, -gatecodes, -cctinfo, -sgsocinfo, -sfinfo, -scominfo, -matcominfo, -airmaninfo, -COs")
+    .addField("Developer authorization commands:", "-clientlog, -botstats, -networkhost, -devlanguage, -scriptplatform")
     .setThumbnail("https://cdn.discordapp.com/attachments/384133046368206848/493096425484451890/3602266913a7a394fb5f4d1e3061bd03.png")
     .setColor("#2A363B")
     
