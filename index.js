@@ -175,15 +175,6 @@ if(cmd === `${prefix}shout`){
       }    else {
          message.reply("Your not an officer.")
       }
-      let officer = message.guild.roles.find("name", "Officer Candidate")      
-      if(message.member.roles.has(officer.id)) {
-         message.channel.send(embed)
-         message.channel.send("<@&493091412481671169>")
-         message.channel.send("<@&493091586624847892>")
-         message.channel.send("<@&493091739222147092>")
-      }    else {
-         message.reply("Your not an officer.")
-      }
 }
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\  
    if(cmd === `${prefix}gatecodes`){
