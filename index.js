@@ -318,11 +318,24 @@ if(cmd === `${prefix}shout`){
         .setColor("#2A363B")
         .addField("Warn Reason:", warnreason)
         .setDescription("You have been warned in ***AFPU***")
+        
+  let wEmbed = new Discord.RichEmbed()
+   .setThumbnail("https://cdn.discordapp.com/attachments/426090985475538954/491717416355889172/Possible_AFPU.png") 
+   .setTitle("Warn Used.")
+  .setColor("#2A363B")
+  .addField("Warned User.", `${wUser} with the ID: ${wUser.id}`)
+  .addField("Warned by:", `<@${message.author.username}> with the ID: ${message.author.id}`)
+  .addField("Channel", message.channel)
+  .addField("Time", message.createdAt)
+  .addField("Warn Reason", warnreason);
+
+   let kchannel = message.guild.channels.find(`name`, "modlogs");        
             
         
        if(message.member.roles.has(officerrole.id)) {
        message.reply("***User has been warned.***");
-         if(message.mentions.users.first()) return message.mentions.users.first().send(warnembed);    
+         if(message.mentions.users.first()) return message.mentions.users.first().send(warnembed); 
+        kchannel.send(wEmbed) 
       }    else {
          message.reply("Stop trying to warn people that dont need warning please, you dont even have the right perms.")
       }  
