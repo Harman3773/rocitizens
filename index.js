@@ -325,7 +325,9 @@ if(cmd === `${prefix}shout`){
          if(message.mentions.users.first()) return message.mentions.users.first().send(warnembed);    
       }    else {
          message.reply("Stop trying to warn people that dont need warning please, you dont even have the right perms.")
-      }     
+      }  
+        
+      }        
                   
      
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\   
