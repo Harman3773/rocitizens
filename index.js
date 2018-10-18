@@ -116,11 +116,14 @@ if(cmd == `${prefix}clientlog`){
   
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
   
-   if(cmd === `${prefix}totsbday`){
+   if(cmd === `${prefix}calender`){
     let embed = new Discord.RichEmbed()
-    .setTitle("Bday Calender")
+    .setTitle("AFPU Calender")
     .setFooter("Official property of AFPU: Command.")
     .addField("Totoro's Birthday.", "10/10/2018")
+    .addField("<@473228623936094210>", "9/9/2005")
+    .addField("<@481171799204429834>", "28,08,2003")
+    .addField("<@208245840890822656>", "1/1/2002")
     .setThumbnail("https://cdn.discordapp.com/attachments/384133046368206848/493096425484451890/3602266913a7a394fb5f4d1e3061bd03.png")
     .setColor("#2A363B")
     
@@ -137,7 +140,7 @@ if(cmd == `${prefix}clientlog`){
     .addField("More Options:", "Dm a Officer+")
     .addField("More Help Commands:", "-help")
     .addField("Moderation commands:", "-Kick, -Ban, -Report, -Warn.")
-    .addField("Fun Commands:", "-Slap, -Punch, -DM, -Say, -totsbday")
+    .addField("Fun Commands:", "-Slap, -Punch, -DM, -Say, -calender")
     .addField("Bot Utility commands:", "help, status, shout.")
     .addField("AFPU Commands:", "-shout, -event, -gatecodes, -cctinfo, -sgsocinfo, -sfinfo, -scominfo, -matcominfo, -airmaninfo, -COs")
     .addField("Developer authorization commands:", "-clientlog, -botstats, -networkhost, -devlanguage, -scriptplatform")
