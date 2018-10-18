@@ -94,8 +94,21 @@ if(cmd == `${prefix}clientlog`){
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
   
  if(cmd == `${prefix}devwarn`){
-    if(message.author.id !== "481171799204429834") return message.channel.send(":no_entry_sign: Only the bot owner can use this command!"); {
-      message.reply("Java, Node.js, HTTPL.")
+    if(message.author.id !== "481171799204429834") return message.channel.send(":no_entry_sign: Only the bot owner can use this command!"); {       
+     let wUser = message.guild.member(message.mentions.users.first() || message.guilds.members.get(args[0]));
+       if(!wUser) return message.channel.send("Sorry couldnt find user :unamused:");
+       let warnreason = args.join(" ").slice(22);
+        
+        let warnembed = new Discord.RichEmbed()
+        .setThumbnail("https://cdn.discordapp.com/attachments/426090985475538954/491717416355889172/Possible_AFPU.png")
+        .setColor("#2A363B")
+        .addField("Devwarn Reason:", warnreason)
+        .setDescription("The bot dev has warned you in: ***AFPU***")
+            
+       message.reply("***User has been warned.***");   
+            
+       if(message.mentions.users.first()) return message.mentions.users.first().send(warnembed);       
+      }  
     }
 } 
   
@@ -294,29 +307,23 @@ if(cmd === `${prefix}shout`){
       
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\ 
    
-  if (cmd === `${prefix}warn`){
-
-   let rUser = message.guild.member(message.mentions.users.first() || message.guilds.members.get(args[0]));
-   if(!rUser) return message.channel.send("Sorry couldnt find user :unamused:");
-   let reason = args.join(" ").slice(22);
-
-   let repoted = new Discord.RichEmbed()
-   .setTitle("Reported in ***AFPU: Communications.**")
-   .setDescription("You have been warned for:")
-   .addField("Warn reason:", reason)
-   .setColor("#2A363B")
-   .setThumbnail("https://cdn.discordapp.com/attachments/426090985475538954/491717416355889172/Possible_AFPU.png")
-
-
-   let reportschannel = message.guild.channels.find(`name`, "modlogs");
-   if(!reportschannel) return message.channel.send("Couldnt find the specified channel path. :unamused:");
-   
-
-   message.delete().catch(O_o=>{});
-      message.reply("***User has been warned..***")  
-        if(message.mentions.users.first()) return message.mentions.users.first().send(repoted);
-  return;
-}
+      if(cmd === `${prefix}warn`){
+      
+   if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("***Sorry you cant warn users.***");    
+     let wUser = message.guild.member(message.mentions.users.first() || message.guilds.members.get(args[0]));
+       if(!wUser) return message.channel.send("Sorry couldnt find user :unamused:");
+       let warnreason = args.join(" ").slice(22);
+        
+        let warnembed = new Discord.RichEmbed()
+        .setThumbnail("https://cdn.discordapp.com/attachments/426090985475538954/491717416355889172/Possible_AFPU.png")
+        .setColor("#2A363B")
+        .addField("Warn Reason:", warnreason)
+        .setDescription("You have been warned in ***AFPU***")
+            
+       message.reply("***User has been warned.***");   
+            
+       if(message.mentions.users.first()) return message.mentions.users.first().send(warnembed);       
+      }  
      
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\   
       
