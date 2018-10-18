@@ -308,7 +308,7 @@ if(cmd === `${prefix}shout`){
    
       if(cmd === `${prefix}warn`){
       
-   if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("***Sorry you cant warn users.***");    
+     let officerrole = message.guild.roles.find("name", "Officer")     
      let wUser = message.guild.member(message.mentions.users.first() || message.guilds.members.get(args[0]));
        if(!wUser) return message.channel.send("Sorry couldnt find user :unamused:");
        let warnreason = args.join(" ").slice(22);
@@ -319,9 +319,14 @@ if(cmd === `${prefix}shout`){
         .addField("Warn Reason:", warnreason)
         .setDescription("You have been warned in ***AFPU***")
             
-       message.reply("***User has been warned.***");   
-            
-       if(message.mentions.users.first()) return message.mentions.users.first().send(warnembed);       
+        
+       if(message.member.roles.has(officerrole.id)) {
+       message.reply("***User has been warned.***");
+         if(message.mentions.users.first()) return message.mentions.users.first().send(warnembed);    
+      }    else {
+         message.reply("Stop trying to warn people that dont need warning please, you dont even have the right perms.")
+      }     
+                   
       }  
      
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\   
