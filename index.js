@@ -326,8 +326,7 @@ if(cmd === `${prefix}shout`){
       }    else {
          message.reply("Stop trying to warn people that dont need warning please, you dont even have the right perms.")
       }     
-                   
-      }  
+                  
      
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\   
       
