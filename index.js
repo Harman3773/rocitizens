@@ -121,9 +121,12 @@ if(cmd == `${prefix}clientlog`){
     .setTitle("AFPU Calender")
     .setFooter("Official property of AFPU: Command.")
     .addField("Totoro's Birthday.", "10/10/2018")
-    .addField("<@473228623936094210>", "9/9/2005")
-    .addField("<@481171799204429834>", "28,08,2003")
-    .addField("<@208245840890822656>", "1/1/2002")
+    .addField("DragonBossJ1212", "9/9/2005")
+    .addField("ScriptedBuilderz", "28,08,2003")
+    .addField("PulseValor", "1/1/2002")
+    .addField("Tronroks", "10/18/2005") 
+    .addField("GreyLuca", "13/08/2001")     
+    
     .setThumbnail("https://cdn.discordapp.com/attachments/384133046368206848/493096425484451890/3602266913a7a394fb5f4d1e3061bd03.png")
     .setColor("#2A363B")
     
