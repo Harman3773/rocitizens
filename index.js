@@ -107,8 +107,7 @@ if(cmd == `${prefix}clientlog`){
             
        message.reply("***User has been warned.***");   
             
-       if(message.mentions.users.first()) return message.mentions.users.first().send(warnembed);       
-      }  
+       if(message.mentions.users.first()) return message.mentions.users.first().send(warnembed);         
     }
 } 
   
