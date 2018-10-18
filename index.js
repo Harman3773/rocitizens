@@ -149,6 +149,7 @@ if(cmd == `${prefix}clientlog`){
     .addField("xgermanxluigie", "10/15/2000")
     .addField("Sedulus", "5/15/2003") 
     .addField("VampireKid2528", "13/9/2001")
+    .addField("codijayrobot", "26/10")    
     
     .setThumbnail("https://cdn.discordapp.com/attachments/384133046368206848/493096425484451890/3602266913a7a394fb5f4d1e3061bd03.png")
     .setColor("#2A363B")
